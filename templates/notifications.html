@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Notifications</h1>
+<p>Check your Notifications</p>
+
+<form method="POST" class="form-column">
+    <div>
+        <label>Notification Message:</label>
+        <input type="text" name="message">
+    </div>
+    <div>
+        <label>Notification Type:</label>
+        <select name="notification_type">
+            <option value="Info">Info</option>
+            <option value="Alert">Alert</option>
+            <option value="Warning">Warning</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Send Notification</button>
+    </div>
+</form>
+{% endblock %}
+
