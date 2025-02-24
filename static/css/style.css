@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #115497;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background: #495057;
+    border-radius: 5px;
+}
+
+/* Dashboard Page */
+.dashboard-content {
+    margin-left: 260px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-content h1 {
+    color: #444;
+}
+
+/* Billing Page */
+.billing-content {
+    margin-left: 260px;
+    padding: 20px;
+    background: #e19b9b;
+    border-radius: 10px;
+}
+
+.billing-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Plans Page */
+.plans-content {
+    margin-left: 260px;
+    padding: 20px;
+    color: white;
+    background: #729bd2;
+    border-radius: 10px;
+}
+
+/* Notifications Page */
+.notifications-content {
+    margin-left: 260px;
+    padding: 20px;
+    background: #dedbc3;
+    border-radius: 10px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full-width */
+    max-width: 400px; /* Limit width for a neat look */
+    margin: 0 auto; /* Center the form */
+}
+
+.form-column div {
+    margin-bottom: 15px; /* Add space between fields */
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Content */
+.content {
+    margin-left: 260px; /* Adjust for sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+}
