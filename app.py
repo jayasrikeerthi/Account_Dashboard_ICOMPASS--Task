@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 from config import Config 
 from extensions import db, migrate  # Import db and migrate from extensions.py
 from flask_migrate import Migrate
@@ -20,3 +21,5 @@ app.register_blueprint(routes_bp)
 if __name__ == "__main__":
     app.run(debug=True)
 
+with app.app_context():
+    db.create_all()

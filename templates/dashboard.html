@@ -2,16 +2,10 @@
 {% block content %}
 <h2>Welcome to Your Dashboard</h2>
  <form method="POST">
-    <form action="/add_user" method="POST">
         <input type="text" name="username" placeholder="Username" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Save User</button>
-    </form>    
-    </form>
-        {{ form.hidden_tag() }}
-        ...
-    </form>
+        <button type="submit">Save User</button>   
 </form>
 
 <p>Manage your account and settings here.</p>
