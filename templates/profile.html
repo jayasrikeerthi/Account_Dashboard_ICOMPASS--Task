@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>User Profile</h1>
+<form method="POST" enctype="multipart/form-data">
+    <div>
+    <label for="profile_pic">Upload Profile Picture:</label>
+    <input type="file" id="profile_pic" name="profile_pic">
+    </div>
+    <div>
+    <label for="new_password">New Password:</label>
+    <input type="password" id="new_password" name="new_password">
+    </div>
+    <div>
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password">
+    </div>
+    <div>
+    <button type="submit">Update Profile</button>
+    </div>
+</form>
+
+{% endblock %}
